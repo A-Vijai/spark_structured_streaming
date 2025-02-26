@@ -211,7 +211,7 @@ checkpoint_dir = "gs://streaming_checkpointing_new/kafka_stream_checkpoint"
 query = stateful_query.writeStream \
     .outputMode("append") \
     .format("mongodb") \
-    .option('spark.mongodb.connection.uri', "mongodb+srv://haranvj726:TE2pikEARlceUkYB@cluster0.kv4gk.mongodb.net/?retryWrites=true&w=majority") \
+    .option('spark.mongodb.connection.uri', "mongodb+srv://haranvj726@cluster0.kv4gk.mongodb.net/?retryWrites=true&w=majority") \
     .option('spark.mongodb.database', 'ecomm_mart') \
     .option('spark.mongodb.collection', 'orders_data_process_fact') \
     .option("truncate", False) \
